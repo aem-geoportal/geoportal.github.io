@@ -1,1 +1,216 @@
 # geoportal.github.io
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario AgroSpectro</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #13322B;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Encabezado del Gobierno de México */
+        .gov-header {
+            background-color: #003D3A;
+            padding: 0.5rem;
+            text-align: left; /* Alineación del logo a la izquierda */
+            display: flex;
+            align-items: center; /* Alineación vertical del logo */
+        }
+
+        .gov-header img {
+            max-height: 50px;
+            margin-left: 1rem; /* Margen para separar el logo del borde */
+        }
+
+        /* Encabezado y navegación principal */
+        header {
+            background-color: #003D3A;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav {
+            display: flex;
+            flex-grow: 1;
+            justify-content: space-around;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        nav ul li a {
+            color: #D4C19C;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #9D2449;
+        }
+
+        /* Contenido principal */
+        main {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(78, 35, 46, 0.1);
+        }
+
+        h1, h2 {
+            color: #285C4D;
+            text-align: center;
+        }
+
+        h1 {
+            border-bottom: 2px solid #9D2449;
+            padding-bottom: 10px;
+        }
+
+        /* Secciones */
+        section {
+            margin-bottom: 2rem;
+        }
+
+        /* Imágenes y capturas de pantalla */
+        .imagen-ejemplo {
+            display: block;
+            max-width: 80%;
+            height: auto;
+            margin: 1rem auto;
+            border: 1px solid #B38E5D;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(78, 35, 46, 0.1);
+        }
+
+        .imagen-grande {
+            max-width: 90%;
+        }
+
+        /* Botones y elementos interactivos */
+        .btn {
+            display: block;
+            width: 200px;
+            background-color: #003D3A;
+            color: #D4C19C;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            text-align: center;
+            margin: 1rem auto;
+        }
+
+        .btn:hover {
+            background-color: #13322B;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #285C4D;
+            color: #D4C19C;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gov-header">
+        <img src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg" alt="Gobierno de México">
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#interfaz">Interfaz</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduccion">
+            <h1>Manual de Usuario del Geoportal AgroSpectro</h1>
+            <p>Este manual está diseñado para guiarte paso a paso en el uso de la plataforma. Sigue estas instrucciones para aprovechar al máximo todas sus funciones.</p>
+        </section>
+
+        <section>
+            <p>A continuación, se detalla el contenido para cada sección de la interfaz y funcionalidades del geoportal:</p>
+        </section>
+
+        <section id="interfaz">
+            <h2>Interfaz de usuario y navegación básica</h2>
+            <p>La interfaz del geoportal es sencilla y fácil de manejar. A continuación, te explicamos los elementos principales:</p>
+            
+            <h3>1. Herramienta de trazado de polígonos</h3>
+            <p>Con esta herramienta puedes dibujar un polígono que marque tu área de interés en el mapa.</p>
+            <img src="imagenes/1ayuda.jpg" alt="Herramienta de trazado de polígonos" class="imagen-ejemplo">
+
+            <h3>2. Selección del área de interés</h3>
+            <p>Después de habilitar la herramienta de trazado, elige la opción indicada en un recuadro rojo. Esto te permitirá comenzar a definir el área exacta que quieres analizar.</p>
+            <img src="imagenes/2 recorte.PNG" alt="Selección del área de interés" class="imagen-ejemplo">
+
+            <h3>3. Ingreso de fechas</h3>
+            <p>Luego de seleccionar el área, ingresa la fecha de inicio y final del periodo que deseas analizar. Usa el formato "AAAA-MM-DD" para asegurarte de que el sistema lo reconozca correctamente.</p>
+            <img src="imagenes/3_recorte.PNG" alt="Ingreso de fechas" class="imagen-ejemplo">
+            
+            <p>A continuación, te mostramos un ejemplo de cómo ingresar las fechas correctamente en el formato requerido (YYYY-MM-DD).</p>
+            <img src="imagenes/4_recorte.PNG" alt="Ejemplo de ingreso de fechas" class="imagen-ejemplo">
+
+            <h3>4. Selección del tipo de índice</h3>
+            <p>El siguiente paso es elegir el tipo de índice que utilizarás en tu análisis. Puedes optar por índices normalizados o no normalizados, dependiendo la necesidad.</p>
+            <img src="imagenes/5_recorte.png" alt="Selección del tipo de índice" class="imagen-ejemplo">
+
+            <h3>5. Procesamiento de datos</h3>
+            <p>Una vez que todo esté listo, haz clic en el botón "Procesar". El sistema comenzará a analizar el área y las fechas que seleccionaste y te mostrará los resultados.</p>
+            <img src="imagenes/6_recorte.PNG" alt="Botón de procesamiento" class="imagen-ejemplo">
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto para soporte</h2>
+            <p>Si necesitas ayuda adicional, no dudes en contactarnos:</p>
+            <ul>
+                <li>Email: soporte@tugeoportal.com</li>
+                <li>Teléfono: +1 234 567 890</li>
+                <li>Dirección: Calle Ejemplo 123, Ciudad, País</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AgroSpectro. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
